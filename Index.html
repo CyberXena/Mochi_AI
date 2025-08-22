@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mochi Trader Scalper</title>
+  <script>
+    function injectBot() {
+      const script = document.createElement("script");
+      script.textContent = ` 
+        // === Script Bot ===
+        (()=>{
+          ${/* tempel seluruh kode bot di sini */""}
+        })();
+      `;
+      document.body.appendChild(script);
+    }
+
+    // tunggu halaman selesai load
+    window.addEventListener("load", () => {
+      injectBot();
+    });
+  </script>
+</head>
+<body>
+  <h1>Loading Mochi Trader Scalper...</h1>
+</body>
+</html>
